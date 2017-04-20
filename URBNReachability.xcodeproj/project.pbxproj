@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		F6BFB9351EA8162200F48C37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BFB9341EA8162200F48C37 /* AppDelegate.swift */; };
 		F6BFB9371EA8162200F48C37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BFB9361EA8162200F48C37 /* ViewController.swift */; };
-		F6BFB93A1EA8162200F48C37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6BFB9381EA8162200F48C37 /* Main.storyboard */; };
 		F6BFB93C1EA8162200F48C37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6BFB93B1EA8162200F48C37 /* Assets.xcassets */; };
 		F6BFB93F1EA8162200F48C37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6BFB93D1EA8162200F48C37 /* LaunchScreen.storyboard */; };
 		F6BFB94A1EA8162200F48C37 /* URBNReachabilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BFB9491EA8162200F48C37 /* URBNReachabilityTests.swift */; };
+		F6BFB9551EA818BA00F48C37 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BFB9541EA818BA00F48C37 /* Reachability.swift */; };
+		F6BFB9571EA81B3900F48C37 /* ReachablityProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BFB9561EA81B3900F48C37 /* ReachablityProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +30,14 @@
 		F6BFB9311EA8162200F48C37 /* URBNReachability.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = URBNReachability.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6BFB9341EA8162200F48C37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6BFB9361EA8162200F48C37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F6BFB9391EA8162200F48C37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F6BFB93B1EA8162200F48C37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6BFB93E1EA8162200F48C37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6BFB9401EA8162200F48C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6BFB9451EA8162200F48C37 /* URBNReachabilityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = URBNReachabilityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6BFB9491EA8162200F48C37 /* URBNReachabilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URBNReachabilityTests.swift; sourceTree = "<group>"; };
 		F6BFB94B1EA8162200F48C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6BFB9541EA818BA00F48C37 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		F6BFB9561EA81B3900F48C37 /* ReachablityProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachablityProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +81,11 @@
 			children = (
 				F6BFB9341EA8162200F48C37 /* AppDelegate.swift */,
 				F6BFB9361EA8162200F48C37 /* ViewController.swift */,
-				F6BFB9381EA8162200F48C37 /* Main.storyboard */,
 				F6BFB93B1EA8162200F48C37 /* Assets.xcassets */,
 				F6BFB93D1EA8162200F48C37 /* LaunchScreen.storyboard */,
 				F6BFB9401EA8162200F48C37 /* Info.plist */,
+				F6BFB9541EA818BA00F48C37 /* Reachability.swift */,
+				F6BFB9561EA81B3900F48C37 /* ReachablityProtocol.swift */,
 			);
 			path = URBNReachability;
 			sourceTree = "<group>";
@@ -183,7 +186,6 @@
 			files = (
 				F6BFB93F1EA8162200F48C37 /* LaunchScreen.storyboard in Resources */,
 				F6BFB93C1EA8162200F48C37 /* Assets.xcassets in Resources */,
-				F6BFB93A1EA8162200F48C37 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +205,8 @@
 			files = (
 				F6BFB9371EA8162200F48C37 /* ViewController.swift in Sources */,
 				F6BFB9351EA8162200F48C37 /* AppDelegate.swift in Sources */,
+				F6BFB9571EA81B3900F48C37 /* ReachablityProtocol.swift in Sources */,
+				F6BFB9551EA818BA00F48C37 /* Reachability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,14 +229,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F6BFB9381EA8162200F48C37 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F6BFB9391EA8162200F48C37 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F6BFB93D1EA8162200F48C37 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
